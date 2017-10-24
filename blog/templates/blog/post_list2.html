@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>이노와이즈 blog</title>
+    </head>
+    <body>
+        <div>
+            <h1><a href="http://www.innowise.co.kr">Innowise</a></h1>
+        </div>
+        
+        {{ posts2 }}
+        
+
+{% for post in posts2 %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
+
+
+
+    </body>
+</html>
